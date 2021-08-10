@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.UploadDoc.UploadVendorDoc">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_ud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_ud">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/doc_driving_licence_front"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="teckVendorDocPic"
+                        android:layout_toLeftOf="@+id/command_panel_driving_licence_front"
+                        android:layout_toStartOf="@+id/command_panel_driving_licence_front">
+
+                        <TextView
+                            android:id="@+id/driving_licence_front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_driving_licence_front"
+                            android:padding="@dimen/dp5"
+                            android:textColor="@color/cardview_dark_background"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"/>
+
+
+                        <ImageView
+                            android:id="@+id/selected_img_driving_licence_front"
+                            android:onClick="teckVendorDocPic"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/ic_add_a_photo_black_24dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/driving_licence_front"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/command_panel_driving_licence_front"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:visibility="visible"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true">
+                        <ProgressBar
+                            android:id="@+id/process_bar_row_driving_licence_front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"/>
+                        <!--android:visibility="gone"-->
+                        <ImageView
+                            android:id="@+id/upload_image_driving_licence_front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_send_black_24dp"
+                            android:visibility="gone"/>
+                        <!--android:visibility="gone"-->
+
+                        <ImageView
+                            android:id="@+id/checkImage_driving_licence_front"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/check_black"
+                            android:visibility="gone"/>
+                        <!--android:visibility="gone"-->
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/doc_driving_licence_back"
+                        android:layout_width="match_parent"
+                        android:onClick="teckVendorDocPic"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/command_panel_driving_licence_back"
+                        android:layout_toStartOf="@+id/command_panel_driving_licence_back">
+
+                        <TextView
+                            android:id="@+id/doc_title_driving_licence_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_driving_licence_back"
+                            android:padding="@dimen/dp5"
+                            android:textColor="@color/cardview_dark_background"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"/>
+
+
+                        <ImageView
+                            android:id="@+id/selected_img_driving_licence_back"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="4dp"
+                            android:onClick="teckVendorDocPic"
+                            android:src="@drawable/ic_add_a_photo_black_24dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/doc_title_driving_licence_back"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/command_panel_driving_licence_back"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:visibility="visible"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true">
+                        <ProgressBar
+                            android:id="@+id/process_bar_row_driving_licence_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"/>
+                        <!--android:visibility="gone"-->
+                        <ImageView
+                            android:id="@+id/upload_image_driving_licence_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_send_black_24dp"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"/>
+                        <!--android:visibility="gone"-->
+
+                        <ImageView
+                            android:id="@+id/checkImage_driving_licence_back"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/check_black"
+                            android:visibility="gone"/>
+                        <!--android:visibility="gone"-->
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/doc_address_proof"
+                        android:layout_width="match_parent"
+                        android:onClick="teckVendorDocPic"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/command_panel_address_proof"
+                        android:layout_toStartOf="@+id/command_panel_address_proof">
+
+                        <TextView
+                            android:id="@+id/doc_title_address_proof"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_address_proof"
+                            android:padding="@dimen/dp5"
+                            android:textColor="@color/cardview_dark_background"
+                            android:layout_centerHorizontal="true"
+                            android:textStyle="bold"/>
+
+
+                        <ImageView
+                            android:id="@+id/selected_img_address_proof"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="4dp"
+                            android:onClick="teckVendorDocPic"
+                            android:src="@drawable/ic_add_a_photo_black_24dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/doc_title_address_proof"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/command_panel_address_proof"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:visibility="visible"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true">
+                        <ProgressBar
+                            android:id="@+id/process_bar_row_address_proof"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"/>
+                        <!--android:visibility="gone"-->
+                        <ImageView
+                            android:id="@+id/upload_image_address_proof"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_send_black_24dp"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"/>
+                        <!--android:visibility="gone"-->
+
+                        <ImageView
+                            android:id="@+id/checkImage_address_proof"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/check_black"
+                            android:visibility="gone"/>
+                        <!--android:visibility="gone"-->
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cab_submit_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/btn_background"
+        app:rippleColor="@color/reble_color"
+        app:cornerRadius="@dimen/dp15"
+
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

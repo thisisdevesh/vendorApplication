@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/lay_enter_otp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginLeft="@dimen/dp16"
+            android:text="@string/enter_otp"
+            android:padding="@dimen/dp5"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#AEBDBD"
+            android:layout_margin="@dimen/dp5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/we_have_sent_otp_to"
+            android:layout_marginTop="@dimen/dp10"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/message_text"
+            android:textSize="16sp"
+            android:padding="@dimen/dp5"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_45"
+            android:layout_marginRight="@dimen/size_45"
+            android:layout_marginTop="@dimen/dp10"
+            android:inputType="number"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/dp15"
+            android:hint=" Enter Otp "
+            android:maxLength="4"
+            android:id="@+id/enter_otp"
+            android:background="@drawable/boder_otp"/>
+
+        <TextView
+            android:id="@+id/text_view_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="00:00"
+            android:padding="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="@string/re_send_otp"
+            android:id="@+id/resend_otp"
+            android:visibility="gone"
+            android:padding="@dimen/dp5"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                app:rippleColor="@color/reble_color"
+                app:cornerRadius="@dimen/dp15"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="@dimen/dp10"
+                android:id="@+id/button_otp_cancle"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp16"
+                android:text="@string/cancel"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                app:rippleColor="@color/reble_color"
+                app:cornerRadius="@dimen/dp15"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp16"
+                android:id="@+id/button_otp_verify"
+                android:text="Verify"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/update_password_layout"
+        android:visibility="gone"
+        android:padding="@dimen/dp10">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp15"
+            android:hint="Enter new password"
+            android:id="@+id/update_password_text"
+            android:layout_below="@+id/in_email"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_marginBottom="@dimen/dp10"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidth="2sp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:maxLength="10"
+                android:drawablePadding="@dimen/dp15"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/hint_color">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            app:rippleColor="@color/reble_color"
+            app:cornerRadius="@dimen/dp15"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="@dimen/dp10"
+            android:id="@+id/update_password_button"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp30"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp16"
+            android:text="@string/update"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

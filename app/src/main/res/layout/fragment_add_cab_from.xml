@@ -1,0 +1,301 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.gts.coordinator.Activity.From.AddCabFrom">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/toolbar_cf"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_cf">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_cf"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/heading_update_vendor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Vendor/ Update Cab Documents"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginLeft="@dimen/dimen_25dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:weightSum="1"
+                android:background="@drawable/boder">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_name_plate"/>
+
+                <EditText
+                    android:id="@+id/tv_cab_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".77"
+                    android:drawablePadding="@dimen/dp10"
+                    android:hint="Cab Number"
+                    android:digits="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimary" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".13"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_background"
+                        android:src="@drawable/ic_search_white_24dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerInside"
+                        android:id="@+id/check_stetus_cab_fom"/>
+                    <ProgressBar
+                        android:id="@+id/process_bar_search"
+                        style="@android:style/Widget.ProgressBar.Large.Inverse"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_laout"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:id="@+id/select_vendor"
+                    android:layout_marginLeft="@dimen/lay_m_s"
+                    android:layout_marginRight="@dimen/lay_m_s"
+                    android:background="@drawable/boder"
+                    android:paddingTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/imm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_test_vendor" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/vendor_name_add_cab"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:hint="@string/change_vendor"
+                        android:textColor="@color/colorPrimary"
+                        android:inputType="text"
+                        android:layout_marginBottom="-8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imm1"
+                        android:overlapAnchor="false" />
+                    <TextView
+                        android:layout_below="@+id/vendor_name_add_cab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/item_not_found"
+                        android:layout_marginTop="-20dp"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/test_text"
+                        android:visibility="gone"/>
+
+
+                </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lay_cab_add"
+                android:layout_marginLeft="@dimen/lay_m_s"
+                android:layout_marginRight="@dimen/lay_m_s"
+                android:visibility="gone">
+                <RelativeLayout
+                    android:id="@+id/layout_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_laout"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boder"
+                    android:paddingTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/imm2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/ic_car" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/sp_vendorName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|left"
+                        android:dropDownVerticalOffset="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/imm2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_model_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_laout"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boder"
+                    android:paddingTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/imm3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:src="@drawable/ic_car" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/sp_model_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/imm3"
+                        android:dropDownVerticalOffset="45dp"
+                        android:gravity="bottom|left" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_city_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/add_laout"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/boder"
+                    android:paddingTop="2dp"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/sp_city_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dropDownVerticalOffset="25dp">
+
+                    </androidx.appcompat.widget.AppCompatSpinner>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!--android:inputType="number"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/lay_button"
+                android:visibility="visible"
+                android:layout_marginStart="@dimen/lay_m_s"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="@dimen/lay_m_s"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/btn_background"
+                    android:padding="15dp"
+                    android:paddingLeft="12dp"
+                    android:layout_marginRight="@dimen/dp3"
+                    android:paddingRight="12dp"
+                    android:text="Submit"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+                <ProgressBar
+                    android:id="@+id/process_bar_ca"
+                    style="@android:style/Widget.ProgressBar.Large.Inverse"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+                <Button
+                    android:id="@+id/btn_skip_cab"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/btn_background"
+                    android:padding="15dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="@string/next"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

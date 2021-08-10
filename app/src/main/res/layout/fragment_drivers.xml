@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DriversFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <ImageView android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_arrow_back_grey_36dp"
+            android:text="Back"/>
+
+        <TextView android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_back"
+            android:layout_toEndOf="@id/btn_back"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Vendor:" />
+
+        <TextView android:id="@+id/vendor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/label"
+            android:layout_toEndOf="@id/label"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/driver_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_below="@id/header"
+        app:layoutManager="LinearLayoutManager"
+        tools:listitem="@layout/fragment_driver_item"/>
+
+</RelativeLayout>

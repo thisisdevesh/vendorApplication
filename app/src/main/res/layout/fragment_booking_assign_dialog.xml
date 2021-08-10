@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.booking.sendBooking.BookingAssignDialogFragment">
+    <ProgressBar
+        android:layout_width="@dimen/dimen_80dp"
+        android:layout_height="@dimen/dimen_80dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/process_bar"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:id="@+id/searchDriverc"
+        app:cardCornerRadius="@dimen/dp20">
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchDriver"
+            android:focusable="true"
+            android:clickable="true"
+            app:queryHint="@string/search_driver_name_cab_no_mobile_no"
+            android:padding="@dimen/dp5"
+            android:autofillHints="Search Hare"/>
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/item_not_found"
+        android:gravity="center"
+        android:textSize="@dimen/dimen_22sp"
+        android:textColor="@color/red"
+        android:layout_centerInParent="true"
+        android:id="@+id/item_not_found"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rev_active_driver"
+        android:scrollbarSize="@dimen/dp15"
+        android:layout_marginBottom="@dimen/dp20"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/searchDriverc" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dimen_16dp"
+        app:fabSize="mini"
+        android:src="@drawable/img_back_arrow"
+        android:id="@+id/fragment_back"
+        android:background="@color/btn_background"/>
+
+
+
+</RelativeLayout>

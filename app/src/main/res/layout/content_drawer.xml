@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/content_drawer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+        <!--tools:context="com.gts.coordinator.MenuActivity"-->
+        <!--tools:showIn="@layout/activity_menu">-->
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/process_bar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:visibility="gone" />-->
+    <!--</RelativeLayout>-->
+    <!--android:fitsSystemWindows="true"-->
+
+<!--
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_drawer"
+        app:menu="@menu/activity_menu_drawer"
+        />
+-->
+    <!--android:fitsSystemWindows="true"-->
+
+
+    <!--android:id="@+id/nav_view"-->
+
+
+    <!--  <android.support.design.widget.FloatingActionButton
+          android:id="@+id/fab"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom|end"
+          app:srcCompat="@android:drawable/ic_dialog_email"/>
+      android:layout_margin="@dimen/fab_margin"-->
+</LinearLayout>

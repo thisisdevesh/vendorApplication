@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lay_show_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="@dimen/dp5"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/replace"
+                android:layout_width="@dimen/dimen_80dp"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:text="@string/replace"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:autoSizeMaxTextSize="@dimen/dimen_18sp"
+                app:autoSizeMinTextSize="@dimen/dimen_16sp" />
+
+            <TextView
+                android:id="@+id/free"
+                android:layout_width="@dimen/dimen_80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:autoSizeMaxTextSize="@dimen/dimen_18sp"
+                app:autoSizeMinTextSize="@dimen/dimen_16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/ItemViewStyle"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".85">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/ic_location_form_24dp"
+                        android:drawablePadding="@dimen/dp5"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/from_location"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/ic_location_to_24dp"
+                        android:drawablePadding="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:id="@+id/to_location"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:drawableLeft="@drawable/ic_id"
+                        android:drawablePadding="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:id="@+id/booking_id"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/ic_work_black_24dp"
+                        android:drawablePadding="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+
+                        android:id="@+id/package_name"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:gravity="left|center"
+                        android:drawableLeft="@drawable/ic_driver_24"
+                        android:drawablePadding="@dimen/dp5"
+                        android:id="@+id/driver_name"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/ic_vendor_24"
+                        android:drawablePadding="@dimen/dp5"
+                        android:padding="5dp"
+                        android:gravity="left|center"
+                        android:id="@+id/vendor_name"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:gravity="left|center"
+                        android:drawableLeft="@drawable/ic_call_icon"
+                        android:drawablePadding="@dimen/dp5"
+                        android:id="@+id/call_driver"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/ic_call_icon"
+                        android:drawablePadding="@dimen/dp5"
+                        android:padding="5dp"
+                        android:gravity="left|center"
+                        android:id="@+id/call_vendor"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/ic_rupee_indian"
+                        android:drawablePadding="@dimen/dp5"
+                        android:padding="5dp"
+                        android:gravity="left|center"
+                        android:id="@+id/amount"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:drawableLeft="@drawable/wallet"
+                        android:drawablePadding="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:id="@+id/paid_wallet_amount"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                        android:drawablePadding="@dimen/dp5"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/date_and_time"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/dp5"
+                        android:padding="5dp"
+                        android:id="@+id/no_of_day"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_name_plate"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:drawablePadding="@dimen/dp5"
+                        android:padding="5dp"
+                        android:id="@+id/cab_No"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_car"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:drawablePadding="@dimen/dp5"
+                        android:padding="5dp"
+                        android:id="@+id/cabType"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+<!--
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/down_arrow"
+                android:id="@+id/assign_booking"
+                android:scaleType="centerInside"/>
+-->
+            <!-- android:entries="@array/Animals"-->
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp5"
+    android:weightSum="1"
+    android:layout_marginBottom="@dimen/dp5">
+
+<!--android:background="@drawable/button_background_tp"-->
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".25"
+        android:clickable="true"
+        android:id="@+id/id_vendor">
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:src="@drawable/ic_add_user"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".25"
+        android:clickable="true"
+        android:id="@+id/id_cab">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_vendor"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Vendor List" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".25"
+        android:clickable="true"
+        android:id="@+id/id_driver">
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:src="@drawable/ic_cab_icon"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cab List"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight=".25"
+        android:clickable="true"
+        android:id="@+id/id_wallate">
+        <ImageView
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:src="@drawable/ic_assignment_ind_black_24dp"
+            android:layout_gravity="center" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/booking_list"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,330 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme2" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#fff</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/colorPrimary</item>
+        <!--<item name="android:background">@color/colorPrimary</item>-->
+    </style>
+
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">#fff</item>-->
+<!--        <item name="colorPrimaryDark">#0C60A5</item>-->
+<!--        <item name="colorAccent">#D8EE286C</item>-->
+<!--    </style>-->
+    <style name="DialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+<!--        <item name="android:colorPrimary">@color/colorPrimary</item>-->
+    </style>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light">-->
+   <!-- <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>-->
+
+<!--
+        <style name="AppTheme" parent="Base.Theme.AppCompat.Light.">
+            &lt;!&ndash; Customize your theme here. &ndash;&gt;
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+        </style>
+-->
+
+        <!--<item name="android:navigationBarColor">@color/colorPrimary</item>-->
+    <!--</style>-->
+
+    <style name="AlertDialogStyle_green" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/payumoney_text_color</item>
+    </style>
+    <style name="AppTheme.Green" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="alertDialogTheme">@style/AlertDialogStyle_green</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+    <style name="camaraThame" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#0C60A5</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="title_txt">
+        <item name="android:typeface">serif</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LoginBtnTheme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+
+    <style name="option_txt_large">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#2A2A2A</item>
+    </style>
+
+    <style name="infor_txt">
+        <item name="android:textSize">18sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textColor">@color/btn_background</item>
+    </style>
+
+    <style name="generalnotitle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme2.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="HeadingText">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TabStyle">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme2.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="viewPagerTitleStrip">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#660303</item>
+        <item name="android:textSize">14sp</item>  <!--my desired text size-->
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme2">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="android:Widget.Holo.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+
+    <style name="mySpinnerItemStyle" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/my_spinner_text_color</item>
+    </style>
+
+    <!--rss-->
+    <style name="SearchViewTheme"  parent="Widget.AppCompat.SearchView">
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="queryBackground">@color/black</item>
+        <item name="submitBackground">@color/black</item>
+       <!--<item name="android:colorPrimary">@color/white</item>-->
+        <!--<item name="queryBackground">@color/white</item>-->
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+
+    <!--payu-->
+
+    <style name="AppTheme.Base" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorButtonNormal">@color/primary</item>
+    </style>
+
+
+
+
+    <style name="ThemeRadioButton.Green">
+        <item name="colorControlNormal">@color/persian_green_accent</item>
+        <item name="colorControlActivated">@color/persian_green_accent</item>
+    </style>
+
+
+
+    <style name="AppTheme.pink" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/pink_primary</item>
+        <item name="colorPrimaryDark">@color/pink_dark</item>
+        <item name="colorAccent">@color/pink_accent</item>
+        <item name="colorButtonNormal">@color/pink_primary</item>
+        <item name="alertDialogTheme">@style/AlertDialogStyle_pink</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="ThemeRadioButton" parent="Theme.AppCompat.Light" />
+
+    <style name="AppTheme.default" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/orange_accent</item>
+        <item name="colorPrimaryDark">@color/orange_accent</item>
+        <item name="colorAccent">@color/orange_accent</item>
+        <item name="colorButtonNormal">@color/orange_accent</item>
+        <item name="alertDialogTheme">@style/AlertDialogStyle_Default</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="ThemeRadioButton.Default">
+        <item name="colorControlNormal">@color/orange_accent</item>
+        <item name="colorControlActivated">@color/orange_accent</item>
+    </style>
+
+    <style name="AlertDialogStyle_Default" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/orange_accent</item>
+        <item name="android:textColorPrimary">@color/payumoney_text_color</item>
+    </style>
+
+    <style name="ThemeRadioButton.Pink">
+        <item name="colorControlNormal">@color/pink_accent</item>
+        <item name="colorControlActivated">@color/pink_accent</item>
+    </style>
+
+
+    <style name="AlertDialogStyle_pink" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/pink_accent</item>
+        <item name="android:textColorPrimary">@color/payumoney_text_color</item>
+    </style>
+
+    <style name="AppTheme.blue" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/royal_blue_accent</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="alertDialogTheme">@style/AlertDialogStyle_blue</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="ThemeRadioButton.Blue">
+        <item name="colorControlNormal">@color/royal_blue_accent</item>
+        <item name="colorControlActivated">@color/royal_blue_accent</item>
+    </style>
+
+    <style name="AlertDialogStyle_blue" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/royal_blue_accent</item>
+        <item name="android:textColorPrimary">@color/payumoney_text_color</item>
+    </style>
+
+    <style name="AppTheme.purple" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryDark">@color/purple_dark</item>
+        <item name="colorAccent">@color/purple_accent</item>
+        <item name="colorButtonNormal">@color/purple_primary</item>
+        <item name="alertDialogTheme">@style/AlertDialogStyle_purple</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="ThemeRadioButton.Purple">
+        <item name="colorControlNormal">@color/purple_accent</item>
+        <item name="colorControlActivated">@color/purple_accent</item>
+    </style>
+
+    <style name="AlertDialogStyle_purple" parent="PayumoneyAppTheme">
+        <item name="colorAccent">@color/purple_accent</item>
+        <item name="android:textColorPrimary">@color/payumoney_text_color</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/dimen_10dp</item>
+        <item name="android:paddingTop">@dimen/dimen_10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/dimen_18sp</item>
+        <item name="android:background">@drawable/bg_rounded_button</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/indigo</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/pink</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/grey</item>
+    </style>
+
+
+    <style name="AppTheme.Grey" parent="PayumoneyAppTheme">
+        <item name="colorPrimary">@color/persian_grey_primary</item>
+        <item name="colorPrimaryDark">@color/persian_grey_dark</item>
+        <item name="colorAccent">@color/persian_grey_accent</item>
+        <item name="colorButtonNormal">@color/persian_grey_primary</item>
+        <item name="alertDialogTheme">@style/AlertDialogStyle_grey</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="ThemeRadioButton.Grey">
+        <item name="colorControlNormal">@color/persian_grey_accent</item>
+        <item name="colorControlActivated">@color/persian_grey_accent</item>
+    </style>
+
+    <style name="AlertDialogStyle_grey" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/persian_grey_accent</item>
+        <item name="android:textColorPrimary">@color/payumoney_text_color</item>
+    </style>
+
+
+    <color name="persian_grey_primary">#616161</color>
+    <color name="persian_grey_dark">#424242</color>
+    <color name="persian_grey_accent">#9e9e9e</color>
+
+    <style name="PositiveButtonStyle" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">#F8F7F7</item>
+        <item name="backgroundTint">#00f</item>
+    </style>
+    <!-- Alert Dialog -->
+    <style name="AlertDialogTheme" parent="@style/Theme.MaterialComponents.Light.Dialog.Alert.Bridge">
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/PositiveButtonStyle</item>
+       <!-- <item name="buttonBarNeutralButtonStyle">....</item>-->
+    </style>
+
+
+
+
+    <style name="ItemViewStyle">
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="scrollbar_shape_style">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumb</item>
+        <item name="android:scrollbarTrackVertical">@drawable/scrollbar_vertical_track</item>
+        <item name="android:scrollbarSize">5dp</item>
+        <item name="android:scrollbarFadeDuration">2000</item>
+        <item name="android:scrollbarDefaultDelayBeforeFade">1000</item>
+    </style>
+
+
+
+
+</resources>

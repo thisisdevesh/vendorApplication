@@ -1,0 +1,75 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.gts.coordinator.fragments.MapViewFragment">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/table_lay">
+        <TableRow>
+
+            <TextView
+                android:id="@+id/free"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5"
+                android:textColor="#00ff00"
+                android:textSize="@dimen/dimen_22sp"
+                android:textStyle="bold"/>
+            <!--#00ff00-->
+
+            <TextView
+                android:id="@+id/busy"
+                android:layout_weight="1"
+                android:text="0"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5"
+                android:textColor="#FF0000"
+                android:textSize="@dimen/dimen_22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5"
+                android:textColor="#000000"
+                android:textSize="@dimen/dimen_22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/deactivate"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/dp5"
+                android:paddingTop="@dimen/dp5"
+                android:textColor="#C58989"
+                android:textSize="@dimen/dimen_22sp"
+                android:textStyle="bold"/>
+        </TableRow>
+    </TableLayout>
+
+
+    <fragment android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/table_lay"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <ProgressBar android:id="@+id/process_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"/>
+
+</RelativeLayout>

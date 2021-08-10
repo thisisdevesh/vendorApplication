@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:background="@drawable/boder"
+             android:elevation="@dimen/dp10"
+             android:layout_margin="@dimen/dp5"
+             tools:context="com.gts.coordinator.fragments.MessageDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/id_image_view_dialog"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp5"
+        android:gravity="center"
+        android:text="Error"
+        android:layout_gravity="center_horizontal"
+        style="@style/title_txt"/>
+    <!--android:text="@string/ref_by_hlp_header"-->
+
+    <View android:id="@+id/divider"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#090909"/>
+    <!--android:layout_below="@+id/driverName"-->
+
+    <TextView android:id="@+id/message"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/dp5"
+              android:padding="10dp"
+              android:text=" "
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:textStyle="bold"
+              android:visibility="visible"
+              style="@style/infor_txt" />
+
+    <!--
+        android:textSize="18sp"
+        android:textColor="@address/text_color_item"
+    -->
+    <!--android:layout_below="@+id/divider"-->
+    <Button android:id="@+id/btn_close"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/OK"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/btn_txt_color"
+            android:layout_gravity="center_horizontal" />
+    <!--android:layout_marginBottom="7dp"-->
+</LinearLayout>

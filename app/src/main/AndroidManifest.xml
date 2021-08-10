@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gts.coordinator">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.vending.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".BroadcastReceiver.MyApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_logo_partner"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo_partner"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup,android:usesCleartextTraffic">
+        <activity android:name=".Activity.OfferDetailsActivity"></activity>
+        <activity android:name=".Activity.ActivityOfferList" />
+        <activity android:name=".Activity.OffersActivity" />
+        <activity android:name=".ui.vendorIncome.IncomActivity" />
+        <activity android:name=".Activity.CabDetailActivity" />
+        <activity android:name=".Activity.VendorDetailActivity">
+
+            <!-- android:launchMode="singleTask" -->
+        </activity> <!-- <activity android:name=".ui.referralDriver.ReferDriverActivity"></activity> -->
+        <activity android:name=".Activity.BookingAsignActivity" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".ui.wallte.ActivityWallet"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".ui.referralDriver.ReferDriverActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activity.UploadDoc.UploadDriverDoc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activity.UploadDoc.UploadCabDoc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activity.StetusCabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activity.UploadDoc.UploadVendorDoc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activity.ActivityCabList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activity.VendorListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activity.RegistationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.From.AddCabFrom"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.From.AddVendorForm"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Activity.From.AddDriverForm"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.notification.ActivityNotification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Activity.ReportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".Activity.ActivityDashboard"
+            android:label="@string/title_activity_dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2"
+            android:windowSoftInputMode="stateHidden">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/camaraThame" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- receiver -->
+        <meta-data android:name="com.google.android.gms.version" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_logo_partner" /> <!-- meta-data -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fabaabc4273e4e67d52a5410e9b2fa7a59088976" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.gts.coordinator.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- android:authorities="com.gtscab.upload.images.fileprovider" -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver
+            android:name=".BroadcastReceiver.SMSReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".BroadcastReceiver.SmsBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".BroadcastReceiver.InternetConnector_Receiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".fcm.FcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.MyBookingService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".service.DriverDataService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

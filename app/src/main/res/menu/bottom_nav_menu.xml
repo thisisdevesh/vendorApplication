@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_add_vendor"
+        android:icon="@drawable/ic_vendor"
+        android:title="Add Vendor" />
+
+    <item
+        android:id="@+id/navigation_add_cab"
+        android:icon="@drawable/ic_cab_icon"
+        android:title="Add Cab" />
+
+    <!--<item-->
+        <!--android:id="@+id/add_driver"-->
+        <!--android:icon="@drawable/ic_driver"-->
+        <!--android:title="@string/add_driver" />-->
+    <item
+        android:id="@+id/navigation_filter"
+        android:icon="@drawable/ic_filter"
+        android:title="Filter" />
+
+
+    <!--<item
+        android:id="@+id/navigation_shop"
+        android:icon="@drawable/ic_vendor"
+        android:title="Add Vendor" />
+
+    <item
+        android:id="@+id/navigation_gifts"
+        android:icon="@drawable/ic_car"
+        android:title="Add Cab" />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/ic_driver_icon"
+        android:title="Add Driver" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_filter"
+        android:title="Filter" />-->
+
+</menu>

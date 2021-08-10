@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CabDetailActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cab_status"
+        android:scrollbars="horizontal"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        style="@style/scrollbar_shape_style"
+        android:layout_below="@+id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/check_button_color"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_marginStart="@dimen/dp8"
+                app:cornerRadius="@dimen/dp10"
+                app:strokeWidth="@dimen/dimen_2dp"
+                android:text="All"
+                app:rippleColor="@color/reble_color"
+                android:id="@+id/all"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/uncheck_button_color"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_marginStart="@dimen/dp8"
+                app:cornerRadius="@dimen/dp10"
+                app:strokeWidth="@dimen/dimen_2dp"
+                android:text="@string/login"
+                app:rippleColor="@color/reble_color"
+                android:id="@+id/loading"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp8"
+                app:cornerRadius="@dimen/dp10"
+                android:id="@+id/busy"
+                android:text="@string/busy"
+                app:rippleColor="@color/reble_color"
+                android:backgroundTint="@color/uncheck_button_color"
+                style="?attr/materialButtonOutlinedStyle"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/logout"
+                android:layout_marginStart="@dimen/dp8"
+                android:text="@string/logout"
+                app:cornerRadius="@dimen/dp10"
+                app:rippleColor="@color/reble_color"
+                android:backgroundTint="@color/uncheck_button_color"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp8"
+                app:cornerRadius="@dimen/dp10"
+                android:id="@+id/maintenance"
+                android:text="@string/maintenance"
+                app:rippleColor="@color/reble_color"
+                android:backgroundTint="@color/uncheck_button_color"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp8"
+                app:cornerRadius="@dimen/dp10"
+                android:id="@+id/deactivate"
+                android:text="@string/deactivated"
+                app:rippleColor="@color/reble_color"
+                android:backgroundTint="@color/uncheck_button_color"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_marginRight="@dimen/dp8" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cab_status"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp16"
+        android:textColor="@color/red"
+        android:layout_centerInParent="true"
+        android:id="@+id/item_not_found"/>
+
+</RelativeLayout>

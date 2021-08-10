@@ -1,0 +1,160 @@
+<resources>
+    <array name="cab_document_names">
+        <item>Registration Certificate</item>
+        <item>Pollution Certificate</item>
+        <item>Amit</item>
+        <item>Certificate</item>
+        <item>Registration ----</item>
+
+    </array>
+    <string name="app_name">GTS Partner</string>
+    <string name="login_string">Login with GTS</string>
+    <string name="rupaya_logo">\u20B9</string>
+    <string name="email">E-Mail</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="show_password">Show Password ?</string>
+    <string name="login">Login</string>
+    <string name="forget_password"><u>Forgot Password ? </u></string>
+    <string name="forget_email">Please Enter your Email </string>
+    <string name="forget_conform_code">Please Enter your OTP </string>
+    <string name="re_enter_password">Please Confirm your Password </string>
+    <string name="warning"> * your password does not match </string>
+    <string name="reset_password">Please Enter your Password </string>
+    <string name="OK">OK</string>
+    <string name="driver_registration_form">Driver Registration Form</string>
+    <string name="gts_wallet">GTS WALLET</string>
+    <string name="text_username" translatable="false">Username</string>
+    <string name="name">Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="fcm_registration_success">fcm.RegistrationSuccess</string>
+    <string name="phno">Phone No</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="arg_fcm_token">fcm_token</string>
+    <string name="fcm_registration_error">fcm.RegistrationError</string>
+    <string name="fcm_token_save_only">fcm_token_save_only</string>
+
+
+    <string name="arg_fcm_token_changed">fcm_token_changed</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="title_activity_dashboard">Dash Board</string>
+
+    <string name="title_activity_vendors">Vendors</string>
+    <string name="vendors_title">Vendors Info</string>
+    <string name="drivers_title">Drivers Info</string>
+    <string name="enter_money">Enter Money</string>
+    <string name="recharge_gts_wallet">Recharge GTS Wallet</string>
+    <string name="vendor_registration_form">VENDOR REGISTRATION FORM</string>
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+    <string name="gts_transfer_money">GTS Transfer Money</string>
+    <string name="recharge_wallet">Recharge Wallet</string>
+    <string name="transfer_money">Transfer Money</string>
+    <string name="transaction_details">Transaction Details</string>
+    <string name="password">Password</string>
+    <string name="address">Address</string>
+    <string name="mobile">Mobile</string>
+    <string name="vendor_name">Vendor Name</string>
+    <string name="vendor_phno">Vendor Mobile No.</string>
+    <string name="vendor_address">Vendor Address</string>
+    <string name="search_vendor_name">Search Name and Phone No </string>
+    <string name="change_vendor">Search Vendor By Name/No.</string>
+    <string name="enterOtp">Enter OTP</string>
+    <string name="sentToMobile">Sent to your mobile number </string>
+    <string name="submit">Submit</string>
+    <!--ioguyrt-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_dashboard2">DashboardActivity2</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_home">Home</string>
+
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="ddd"><![CDATA[Search Name & mobile No.]]></string>
+    <string name="data_note_found">Data Note Found</string>
+    <string name="search_driver_name_cab_no_mobile_no"><![CDATA[Search Driver Name, Cab No, & Mobile No.]]></string>
+    <string name="item_not_found">Item Not Found...</string>
+    <string name="driver_name">Driver Name</string>
+    <string name="cab_number">Cab number</string>
+    <string name="formatted_place_data">
+        Name: %1$s\nAddress: %2$s\nPhone: %3$s\nWebsite: %4$s\nRating: %5$s\nId: %6$s\n
+    </string>
+    <string name="my_channel">Notification Channel</string>
+    <string name="cab_type">Cab Type</string>
+    <string name="driver_no">Driver No.</string>
+    <string name="lod">Loading.... </string>
+    <string name="enter_text">Please Enter Text</string>
+    <string name="info">Info</string>
+    <string name="error">Error</string>
+    <string name="successful">Successful</string>
+    <string name="vendor_balance">Vendor Balance</string>
+    <string name="verified_status">Verified Status</string>
+    <string name="title_home">Home</string>
+
+
+    <!--ghfh-->
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="add_driver">Add Driver</string>
+    <string name="driver_phone_number">Driver Phone Number</string>
+    <string name="report">Report</string>
+    <string name="logout">Logout</string>
+    <string name="notification">Notification</string>
+    <string name="wallet">Wallet</string>
+    <string name="registration">Registration</string>
+    <string name="home">Home</string>
+    <string name="close">Close</string>
+    <string name="re_send_otp"><u>Re-send OTP?</u></string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="we_have_sent_otp_to">हमने आपको OTP भेजा है \n We have sent OTP to  </string>
+    <string name="we_have_sent_otp_to_hindi">हमने आपको OTP भेजा है  </string>
+    <string name="next">Next</string>
+    <string name="select_all_india_permit">Select All India Permit</string>
+    <string name="select_fitness_certificate">Select Fitness Certificate</string>
+    <string name="select_state_permit">Select State Permit</string>
+    <string name="select_insurance">Select Insurance</string>
+    <string name="select_address_proof">Select Address Proof</string>
+    <string name="select_driving_licence_back">Select Driving Licence Back</string>
+    <string name="select_driving_licence_front">Select Driving Licence Front</string>
+    <string name="gts_partner">GTS <p style="color:#EE0E568F">Partner</p> </string>
+    <string name="current_balance">Current Balance</string>
+    <string name="recharge_now">Recharge Now</string>
+    <string name="log_out_user">Log out user</string>
+    <string name="search_cab_no">Search Cab No.</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="total_maintenance_time">Total Maintenance Time :-  </string>
+    <string name="assign_booking">Assign Booking</string>
+    <string name="booking_list">Booking</string>
+    <string name="replace">Replace</string>
+    <string name="free">Free</string>
+    <string name="data_not_available">Data Not Available</string>
+    <string name="verified">Verified</string>
+    <string name="refer_driver">Refer Driver</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="deactivated">Deactivated</string>
+    <string name="busy">Busy</string>
+    <string name="enter_new_number">Enter New Number</string>
+    <string name="otp_confirmation">OTP Confirmation</string>
+    <string name="otp_cofirmation_message">To update partner number we will send otp to : </string>
+    <string name="otp_cofirmation_message_hindi">पार्टनर का मोबाइल नंबर अपडेट करने के लिए हम otp को भेजेंगे</string>
+    <string name="otp_cofirmation_message2">For confirmation we will send you otp : </string>
+    <string name="otp_cofirmation_message2_hindi">पुष्टि के लिए हम आपको otp भेजेंगे : </string>
+    <string name="permission_req">Permission Required</string>
+    <string-array name="Animals">
+        <item>Replace</item>
+        <item>Free</item>
+    </string-array>
+</resources>

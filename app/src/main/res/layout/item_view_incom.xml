@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    app:cardElevation="@dimen/dp3"
+    android:id="@+id/income_card"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lay_item_view"
+            android:padding="@dimen/dp5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                tool:text="Ram Kumar"
+                android:id="@+id/vendor_name"
+                android:drawablePadding="@dimen/dp10"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/dimen_16sp"
+                android:drawableLeft="@drawable/ic_vendor_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:drawablePadding="@dimen/dp10"
+                android:id="@+id/ven_income"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/booking_counter"
+                android:drawableLeft="@drawable/ic_samle_for_avial_balacne"
+                android:text="₹ 2502"
+                android:gravity="center"
+                android:textSize="@dimen/dimen_16sp" />
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:textSize="18sp"
+                android:layout_marginRight="@dimen/dp10"
+                android:id="@+id/booking_counter"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/button_background"
+                android:text="0"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder"
+            android:id="@+id/recycler_view_lay"
+            android:visibility="gone">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp5"
+                android:id="@+id/recycler_view" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Item Not Found"
+                android:visibility="gone"
+                android:id="@+id/item_not_found"
+                android:textSize="22sp"/>
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_80dp"
+                android:id="@+id/process_bar"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="19dp"
+    android:background="@color/container_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/container_bg"
+        android:padding="5dp">
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/container_bg"-->
+            <!--android:layout_gravity="center_horizontal"/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:background="@color/container_bg"
+            android:gravity="center_horizontal"
+            android:text="Your information Updated!"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+<Button
+    android:id="@+id/feedback_submitted"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@color/btn_background"
+    android:text="@string/OK"
+    android:textSize="15dp"
+    android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

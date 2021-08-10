@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_elements"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layput_background"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_cab_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view_activity_recycler_cab_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_cab_list"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_element_cab_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:rippleColor="@color/reble_color"
+        app:maxImageSize="@dimen/dp20"
+        app:borderWidth="2dp"
+        app:elevation="@dimen/dp20"
+        app:showMotionSpec="@anim/slide_in_left"
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/active_yellow"
+        android:src="@drawable/add_black_symbol" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_item_notfound"
+        android:layout_centerInParent="true"
+        android:text="@string/item_not_found"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimen_22sp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

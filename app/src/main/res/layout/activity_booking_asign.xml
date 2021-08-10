@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BookingAsignActivity">
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabView_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@drawable/tab_view_selector"
+        app:tabIndicatorHeight="@dimen/dp5"
+        app:tabIndicatorColor="@color/blue" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabView_booking"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp8"
+        app:fabSize="mini"
+        android:src="@drawable/img_back_arrow"
+        android:id="@+id/back_to_fragment"
+        android:background="@color/btn_background"/>
+
+
+</RelativeLayout>

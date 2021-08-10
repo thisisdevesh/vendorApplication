@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/dp3"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cab_No"
+            android:padding="@dimen/dp5"
+            android:textSize="@dimen/dimen_16sp"
+            android:layout_gravity="center|left"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_name_plate"
+            android:drawablePadding="@dimen/dp10" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/lay_item_view"
+            android:padding="@dimen/dp5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Ram Kumar"
+                android:id="@+id/driver_name"
+                android:drawablePadding="@dimen/dp10"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/dimen_16sp"
+                android:drawableLeft="@drawable/ic_driver_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:drawablePadding="@dimen/dp10"
+                android:id="@+id/driver_income"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/booking_counter"
+                android:drawableLeft="@drawable/ic_samle_for_avial_balacne"
+                android:text="₹ 2502"
+                android:gravity="center"
+                android:textSize="@dimen/dimen_16sp" />
+            <TextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:textSize="18sp"
+                android:layout_marginRight="@dimen/dp10"
+                android:id="@+id/booking_counter"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/button_background"
+                android:text="0"/>
+
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boder"
+            android:padding="@dimen/dp5"
+            android:visibility="gone"
+            android:id="@+id/recycler_view"
+            />
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

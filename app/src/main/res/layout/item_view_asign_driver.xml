@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/dp10"
+
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/boder_unclick"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/location_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp5"
+        android:drawableLeft="@drawable/ic_location_form_24dp"
+        android:text="TextView"
+        android:drawablePadding="@dimen/dp5" />
+
+    <TextView
+        android:id="@+id/location_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp5"
+        android:drawableLeft="@drawable/ic_location_to_24dp"
+        android:drawablePadding="@dimen/dp5"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/date_and_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_access_time_black_24dp"
+        android:drawablePadding="@dimen/dp5"
+        android:padding="@dimen/dp5"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/package_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_work_black_24dp"
+        android:drawablePadding="@dimen/dp5"
+        android:padding="@dimen/dp5"
+        android:text="TextView" />
+
+</LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "384950839771",
+    "firebase_url": "https://gtscoordinator-154711.firebaseio.com",
+    "project_id": "gtscoordinator-154711",
+    "storage_bucket": "gtscoordinator-154711.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384950839771:android:be3bd32885280ffe",
+        "android_client_info": {
+          "package_name": "com.gts.coordinator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384950839771-htv4i6s6uc2b1lujjjac1bbtvnnpmd8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa4m4mdvxBnN8yUiuz9Uwkuy4uiWk_A6A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.gts.coordinator.Activity.ReportActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/toolbar_re"/>
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/tab_view"
+        android:layout_below="@+id/toolbar_re">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/white"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextAppearance="@style/TabStyle"
+            app:tabTextColor="@color/white"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/loginLogoutprogress"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_below="@+id/tab_view"
+        android:id="@+id/ggg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_alignParentLeft="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <AutoCompleteTextView
+                    android:id="@+id/sp_vendorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:inputType="textNoSuggestions"
+                    android:layout_gravity="center"
+                    android:completionThreshold="1"
+                    android:hint="Enter Vendor Name" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_not_found"
+                    android:id="@+id/text_item_notfound"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textColor="@color/red"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sp_cabNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:layout_marginTop="1dp"
+                android:completionThreshold="1"
+                android:hint="Enter Cab No."
+                android:dropDownVerticalOffset="45dp"
+                android:visibility="visible" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@+id/ggg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+
+
+</RelativeLayout>

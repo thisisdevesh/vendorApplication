@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GTSCoordinator.iml" filepath="$PROJECT_DIR$/.idea/modules/GTSCoordinator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/GTSCoordinator.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/GTSCoordinator.app.iml" />
+    </modules>
+  </component>
+</project>

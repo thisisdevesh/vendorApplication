@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_shop"
+        android:icon="@drawable/ic_vendor"
+        android:title="Add Vendor" />
+
+    <item
+        android:id="@+id/navigation_gifts"
+        android:icon="@drawable/ic_car"
+        android:title="Add Cab" />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/ic_driver"
+        android:title="Add Driver" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_filter"
+        android:title="Filter" />
+</menu>

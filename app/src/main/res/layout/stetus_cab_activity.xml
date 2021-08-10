@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="4dp"
+        android:layout_weight="2"
+        card_view:cardUseCompatPadding="true">
+        <!--card_view:cardUseCompatPadding="true"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/lay_main"
+                android:visibility="visible">
+                <LinearLayout
+                    android:id="@+id/card_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/vendorColor_driver"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dp8"
+                            android:layout_marginRight="@dimen/dp8"
+                            android:background="@drawable/ic_circle_green"
+                            android:orientation="vertical"
+                            android:padding="@dimen/dp5">
+
+
+                            <LinearLayout
+                                android:id="@+id/vdrCallingLay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/vendorCallImg"
+                                    android:layout_width="35dp"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/call_white" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/driver_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp5"
+                            android:drawableLeft="@drawable/ic_mobile_icon"
+                            android:drawablePadding="@dimen/dp10"
+                            android:textSize="16sp"
+                            android:text="3322554477"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_marginTop="@dimen/dp8"-->
+                        <!--android:layout_marginBottom="@dimen/dp8"-->
+                        <!--android:background="#2E2D2D"/>-->
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:layout_marginBottom="@dimen/dp8"
+                        android:gravity="left|center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/driver_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp5"
+                            android:drawableLeft="@drawable/ic_test_vendor"
+                            android:drawablePadding="@dimen/dp15"
+                            android:textSize="14sp"
+                            android:text="Ramesh Nautiyal"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/driver_cab_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp5"
+                            android:drawableLeft="@drawable/ic_car"
+                            android:drawablePadding="@dimen/dp15"
+                            android:textSize="14sp"
+                            android:text="Indika"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/driver_cab_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp5"
+                            android:drawableLeft="@drawable/ic_name_plate"
+                            android:drawablePadding="@dimen/dp15"
+                            android:textSize="14sp"
+                            android:text="256"
+                            android:textColor="@color/black" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/cab_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp5"
+                        android:gravity="center"
+                        android:layout_gravity="bottom"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:drawablePadding="@dimen/dp15"
+                        android:textSize="10sp"
+                        android:text="Free"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

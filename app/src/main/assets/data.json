@@ -1,0 +1,103 @@
+{
+  "d":{
+    "__type":"get_service_report:#ContractorService",
+    "Response":{
+      "__type":"GetResponse:#ContractorService",
+      "Message":"Successful",
+      "Status":0
+    },
+    "service_list":[
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":1,
+        "date":"2017-05-22",
+        "plan_type":"Local Drop",
+        "time":"13:24"
+      },
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":2,
+        "date":"2017-05-22",
+        "plan_type":"Local",
+        "time":"13:36"
+      },
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":2,
+        "date":"2017-05-22",
+        "plan_type":"Pick\/Drop",
+        "time":"13:36"
+      },
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":2,
+        "date":"2017-05-22",
+        "plan_type":"Local Drop",
+        "time":"13:36"
+      },
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":3,
+        "date":"2017-05-22",
+        "plan_type":"Local",
+        "time":"16:40"
+      },
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":3,
+        "date":"2017-05-22",
+        "plan_type":"Pick\/Drop",
+        "time":"16:40"
+      },
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":3,
+        "date":"2017-05-22",
+        "plan_type":"Out Station",
+        "time":"16:40"
+      },
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":3,
+        "date":"2017-05-22",
+        "plan_type":"Special Package",
+        "time":"16:40"
+      },
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":3,
+        "date":"2017-05-22",
+        "plan_type":"Local Drop",
+        "time":"16:40"
+      },
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":4,
+        "date":"2017-05-23",
+        "plan_type":"Local",
+        "time":"12:56"
+      },
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":4,
+        "date":"2017-05-23",
+        "plan_type":"Pick\/Drop",
+        "time":"12:56"
+      },
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":4,
+        "date":"2017-05-23",
+        "plan_type":"Out Station",
+        "time":"12:56"
+      },
+      {
+        "__type":"sp_get_self_services_report_Result:#ContractorService",
+        "attempt":4,
+        "date":"2017-05-23",
+        "plan_type":"Local Drop",
+        "time":"12:56"
+      }
+    ]
+  }
+}

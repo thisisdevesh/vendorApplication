@@ -1,0 +1,49 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="2dp"
+    card_view:cardCornerRadius="8dp"
+    tools:context="com.gts.coordinator.CabServices">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:paddingRight="5dp"
+        android:paddingEnd="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <TextView android:id="@+id/itm_name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentStart="true"
+                  android:text="pkg name"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/itm_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textOff="-"
+            android:textOn="+"
+            card_view:showText="true" />
+        <!--android:layout_gravity="end|center_vertical"-->
+        <!--android:textOff="+"-->
+        <!--android:textOn="-"-->
+        <!--android:gravity="end"-->
+        <!--android:layout_marginRight="2dp"-->
+        <!--android:layout_marginEnd="2dp"-->
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

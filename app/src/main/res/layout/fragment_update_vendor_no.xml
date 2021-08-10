@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/lay_enter_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp16"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/dp5"
+            android:text="@string/otp_confirmation"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/dp5"
+            android:background="#AEBDBD" />
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dp10"
+            android:padding="@dimen/dp10"
+            android:text="@string/otp_cofirmation_message"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enter_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/size_45"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/size_45"
+            android:background="@drawable/boder_otp"
+            android:gravity="center"
+            android:hint=" Enter Otp "
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="@dimen/dp15"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text_view_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp5"
+            android:padding="@dimen/dp5"
+            android:text="00:00"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center"
+            android:padding="@dimen/dp5"
+            android:text="@string/re_send_otp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp10"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_otp_cancle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="@dimen/dp10"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp16"
+                app:cornerRadius="@dimen/dp15"
+                app:rippleColor="@color/reble_color" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_Otp_Verify"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="@dimen/dp10"
+                android:text="SEND OTP"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp16"
+                app:cornerRadius="@dimen/dp15"
+                app:rippleColor="@color/reble_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

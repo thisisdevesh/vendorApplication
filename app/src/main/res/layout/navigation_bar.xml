@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10"
+        android:onClick="eventNavigation">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registration"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10"
+        android:onClick="eventNavigation">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/registration_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wallet"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10"
+        android:onClick="eventNavigation">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wallet"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wallet"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notification"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10"
+        android:onClick="eventNavigation">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notifications"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notification"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/report"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10"
+        android:onClick="eventNavigation">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/report"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/report"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10"
+        android:onClick="eventNavigation">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#E6DCDC"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginBottom="@dimen/dp5"
+        android:gravity="center"
+        android:layout_below="@+id/email_id_user">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Version: " />
+        <TextView
+            android:id="@+id/txt_version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="___" />
+    </LinearLayout>
+
+</LinearLayout>

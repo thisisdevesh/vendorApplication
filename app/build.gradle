@@ -1,0 +1,130 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 29
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.gts.coordinator"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 43
+        //40 on 7Sept;2020
+        //41 on 16Oct;2020
+        //42 on 25Jan;2021
+        //43 on 6thFeb;2021
+        versionName "v1.9.7"
+        // new 1.9.4 on 7Spet;2020
+        // new 1.9.5 on 16Oct;2020
+        // new  1.9.6 on 25Jan;2021
+        //new v1.9.7 on 6thFeb;2021
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    bundle {
+
+        language {
+
+            enableSplit = true
+        }
+
+        density {
+            enableSplit = true
+        }
+
+        abi {
+            enableSplit = false
+        }
+    }
+    dependencies {
+        implementation fileTree(dir: 'libs', include: ['*.jar'])
+        implementation 'androidx.appcompat:appcompat:1.2.0'
+        implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+        implementation 'com.google.android.material:material:1.3.0-alpha03'
+        implementation 'androidx.recyclerview:recyclerview:1.1.0'
+        implementation 'androidx.cardview:cardview:1.0.0'
+        //retrofit
+        implementation 'com.squareup.okhttp3:okhttp:3.14.1'
+        implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+        implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+        implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+        //gson
+        implementation 'com.google.code.gson:gson:2.8.6'
+        implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+        //google map..
+        implementation 'com.google.maps.android:android-maps-utils:0.5'
+        implementation 'com.google.android.gms:play-services-location:17.1.0'
+        implementation 'com.google.android.gms:play-services-maps:17.0.0'
+        implementation 'com.google.firebase:firebase-messaging:21.0.0'
+        //used for cope image
+        implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+        testImplementation 'junit:junit:4.13.1'
+        //noinspection GradleCompatible
+        implementation 'com.android.support:support-compat:28.0.0'
+        //  implementation 'com.android.support:support-core-utils:28.0.0'
+        implementation 'com.google.android.gms:play-services-auth:19.0.0'
+        implementation 'com.payumoney.sdkui:plug-n-play:1.5.0'
+        //view model
+        implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+        /* annotationProcessor "android.arch.lifecycle:compiler:1.1.1"*/
+        implementation 'androidx.lifecycle:lifecycle-viewmodel:2.2.0'
+        implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+        //paging
+        implementation 'androidx.paging:paging-runtime:2.1.2'
+        //facebook shimmer effect
+        implementation 'com.facebook.shimmer:shimmer:0.4.0'
+//
+        implementation 'com.airbnb.android:lottie:3.3.1'
+        // implementation 'com.google.android.gms:play-services-auth:12.0.0'
+        // check in app update
+        // view pager 2
+        implementation "androidx.viewpager2:viewpager2:1.0.0"
+        // room
+        implementation "androidx.room:room-runtime:$rootProject.roomVersion"
+        annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
+        androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
+        implementation 'com.google.android.play:core:1.8.3'
+        //tastytoast
+        implementation 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+        //  implementation "androidx.core:core-ktx:+"
+        //  implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+        implementation 'androidx.navigation:navigation-fragment:2.3.1'
+        implementation 'androidx.navigation:navigation-ui:2.3.1'
+        // implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+        implementation "com.wang.avi:library:2.1.3"
+//    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.7.0'
+
+
+        //Read sms automaticattly Sms User Concent Api
+        implementation 'com.google.android.gms:play-services-auth:19.0.0'
+        implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
+        implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+        //glide
+        implementation 'com.github.bumptech.glide:glide:4.10.0'
+
+    }
+    apply plugin: 'com.google.gms.google-services'
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+}

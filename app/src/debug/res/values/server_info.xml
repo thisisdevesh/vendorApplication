@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="server_url">http://192.169.152.206/plesk-site-preview/contractor.gtscab.com/192.169.152.206/contractor.svc</string>-->
+    <!--<string name="server_url">http://104.211.207.115:803/contractor.svc</string>-->
+    <!--production-->
+    <!--<string name="server_url">http://developmentcont.gtscab.com/contractor.svc</string>-->
+    <!--development-->
+    //http://104.211.207.115:803/
+
+</resources>

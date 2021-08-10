@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/content_drawer"
+    tools:context=".ui.wallte.ActivityWallet">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:id="@+id/test_text"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toolbar_wallet"
+    android:id="@+id/lay_main"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#DAD7D8"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/wallet_balance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="@string/rupaya_logo"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="@dimen/dimen_22sp"
+                android:padding="@dimen/dp5"
+                android:textColor="@color/colorPrimary" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/current_balance"
+                android:padding="@dimen/dp5"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="@dimen/dp16"
+                android:textColor="@color/colorPrimary" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="@dimen/dp20"
+                android:weightSum="1">
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:onClick="walletEvent"
+                    android:id="@+id/transfer_money"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp10"
+                    app:cornerRadius="@dimen/dp10"
+                    android:text="@string/transfer_money"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/colorPrimary"/>
+                <androidx.legacy.widget.Space
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:layout_gravity="center"
+                    android:onClick="walletEvent"
+                    android:id="@+id/recharge_now"
+                    android:padding="@dimen/dp10"
+                    app:cornerRadius="@dimen/dp10"
+                    android:text="@string/recharge_now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/colorPrimary"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_wallet_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/shimmer_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/shimmer_item" />
+                <include layout="@layout/shimmer_item" />
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    </RelativeLayout>
+
+
+<!--
+app:shimmer_repeat_count="2"
+-->
+    
+</LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/wallate_pro"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

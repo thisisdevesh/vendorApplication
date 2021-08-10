@@ -1,0 +1,140 @@
+<RelativeLayout android:id="@+id/fragment_card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layput_background"
+    tools:context="com.gts.coordinator.fragments.VendorListFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:text="@string/item_not_found"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="#E90D0D"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/rssss"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_refresh_icon"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:cardUseCompatPadding="true">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_vendor"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone">
+        </androidx.appcompat.widget.SearchView>
+
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_vendor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:scrollbars="vertical"/>
+
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_show"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="@dimen/dp10"
+    android:visibility="gone"
+    android:id="@+id/show_filter_list"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/select_type">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dp10">
+            <RadioButton
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Vendor"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:checked="true"
+                android:layout_gravity="center"
+                android:button="@drawable/radiobutton_color_selector"
+                android:padding="@dimen/dp10"
+                android:drawablePadding="@dimen/dp10"
+                android:id="@+id/vendor_list"
+                android:layout_weight="1" />
+            <RadioButton
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="Driver"
+                android:layout_marginLeft="@dimen/dp10"
+                android:backgroundTint="@color/white"
+                android:button="@drawable/radiobutton_color_selector"
+                android:padding="@dimen/dp10"
+                android:drawablePadding="@dimen/dp10"
+                android:textSize="20dp"
+                android:id="@+id/driver_list"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemTextColor="@android:color/white"
+        app:itemIconTint="@android:color/white"/>
+
+<!--
+ android:background="?android:attr/windowBackground"
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/colorPrimary"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation" />
+-->
+
+</RelativeLayout>

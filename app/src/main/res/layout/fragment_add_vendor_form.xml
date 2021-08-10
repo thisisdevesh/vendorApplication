@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.gts.coordinator.Activity.From.AddVendorForm">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:id="@+id/toolbar_vf"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_laout"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:layout_marginEnd="25dp"
+        android:id="@+id/layy_search"
+        android:layout_below="@+id/toolbar_vf"
+        android:background="@drawable/boder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_call_icon"/>
+
+            <EditText
+                android:id="@+id/test_vendor_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".77"
+                android:drawablePadding="@dimen/dp10"
+                android:hint="@string/vendor_phno"
+                android:digits="1234567890"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".13"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_background"
+                    android:src="@drawable/ic_search_white_24dp"
+                    android:layout_gravity="center"
+                    android:onClick="searchVendor"
+                    android:scaleType="centerInside"
+                    android:id="@+id/check_stetus_cab"/>
+                <ProgressBar
+                    android:id="@+id/process_bar_dr_sarch"
+                    style="@android:style/Widget.ProgressBar.Large.Inverse"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background ="@xml/progress"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/lay_vendor"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar_vf">
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout_city_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/add_laout"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/boder"
+            android:paddingTop="2dp"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sp_city_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dropDownVerticalOffset="25dp">
+
+            </androidx.appcompat.widget.AppCompatSpinner>
+        </RelativeLayout>
+
+<!--android:background="@drawable/boder"-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/vendor_name"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            app:hintTextColor="@color/blue"
+            app:boxStrokeColor="@color/colorPrimary"
+            android:textColorHint="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/et_ven_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_test_vendor"
+                android:drawablePadding="10dp"
+                android:maxLines="1"
+                android:maxLength="60"
+                android:inputType="text"
+                android:gravity="center|left"
+                android:textColor="@color/colorPrimary">
+                <requestFocus/>
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            app:hintTextColor="@color/blue"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            app:boxStrokeColor="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:textColorHint="@color/hint_color"
+            android:hint="@string/enter_new_number" >
+            <EditText
+                android:id="@+id/et_ven_PhNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:maxLines="1"
+                android:digits="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:maxLength="10"
+                android:drawableStart="@drawable/ic_call_icon"
+                android:drawablePadding="12dp"
+                android:gravity="center|left"
+                android:inputType="number"
+                android:textColor="@color/colorPrimary">
+                <!--<requestFocus/>-->
+            </EditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginRight="25dp"
+            app:hintTextColor="@color/blue"
+            app:boxStrokeColor="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/hint_color"
+            android:hint="@string/vendor_address" >
+
+            <EditText
+                android:id="@+id/et_ven_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:drawableStart="@drawable/ic_address"
+                android:drawablePadding="10dp"
+                android:inputType="textMultiLine"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:maxLines="3"
+                android:textColor="@color/colorPrimary"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--</android.support.v7.widget.CardView>-->
+
+
+        <EditText
+            android:id="@+id/et_ven_email"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/boder"
+            android:gravity="center"
+            android:hint="Vendor Email"
+            android:text="NA"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="25dp"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_Submit_ven"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/btn_background"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="19dp"/>
+
+    <ProgressBar
+        android:id="@+id/process_bar_dr"
+        style="@android:style/Widget.ProgressBar.Large.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/btn_skip"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_toRightOf="@+id/btn_Submit_ven"
+        android:layout_height="50dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/btn_background"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:textSize="19dp"/>
+
+</LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
